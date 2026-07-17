@@ -1,0 +1,59 @@
+name: xenobuddy-seven-servo-tripod
+pwm_frequency: 50
+servos:
+  - name: front_left
+    channel: 0
+    min_angle: 35
+    max_angle: 145
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 140
+  - name: front_right
+    channel: 1
+    min_angle: 35
+    max_angle: 145
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 140
+  - name: mid_left
+    channel: 2
+    min_angle: 40
+    max_angle: 140
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 120
+  - name: mid_right
+    channel: 3
+    min_angle: 40
+    max_angle: 140
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 120
+  - name: rear_left
+    channel: 4
+    min_angle: 35
+    max_angle: 145
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 140
+  - name: rear_right
+    channel: 5
+    min_angle: 35
+    max_angle: 145
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 140
+  - name: body_tilt
+    channel: 6
+    min_angle: 60
+    max_angle: 120
+    home_angle: 90
+    min_pulse: 500
+    max_pulse: 2500
+    max_speed_deg_per_sec: 90
