@@ -1,0 +1,19 @@
+name: confused
+description: Curious head/body tilt gesture.
+duration_ms: 1600
+servos:
+  body_tilt:
+    - {t: 0, angle: 90}
+    - {t: 500, angle: 108}
+    - {t: 1000, angle: 78}
+    - {t: 1600, angle: 90}
+  mid_left:
+    - {t: 0, angle: 90}
+    - {t: 800, angle: 82}
+    - {t: 1600, angle: 90}
+  mid_right:
+    - {t: 0, angle: 90}
+    - {t: 800, angle: 98}
+    - {t: 1600, angle: 90}
+safety:
+  max_speed_deg_per_sec: 80
