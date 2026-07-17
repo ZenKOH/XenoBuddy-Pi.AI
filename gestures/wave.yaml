@@ -1,0 +1,18 @@
+name: wave
+description: Friendly front-leg wave.
+duration_ms: 1800
+servos:
+  front_right:
+    - {t: 0, angle: 90}
+    - {t: 400, angle: 118}
+    - {t: 800, angle: 72}
+    - {t: 1200, angle: 118}
+    - {t: 1600, angle: 90}
+    - {t: 1800, angle: 90}
+  body_tilt:
+    - {t: 0, angle: 90}
+    - {t: 600, angle: 96}
+    - {t: 1200, angle: 84}
+    - {t: 1800, angle: 90}
+safety:
+  max_speed_deg_per_sec: 120
