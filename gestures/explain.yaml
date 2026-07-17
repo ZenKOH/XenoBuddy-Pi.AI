@@ -1,0 +1,22 @@
+name: explain
+description: Teacherly alternating front-leg emphasis.
+duration_ms: 2400
+servos:
+  front_left:
+    - {t: 0, angle: 90}
+    - {t: 600, angle: 108}
+    - {t: 1200, angle: 90}
+    - {t: 1800, angle: 104}
+    - {t: 2400, angle: 90}
+  front_right:
+    - {t: 0, angle: 90}
+    - {t: 600, angle: 90}
+    - {t: 1200, angle: 72}
+    - {t: 1800, angle: 90}
+    - {t: 2400, angle: 90}
+  body_tilt:
+    - {t: 0, angle: 90}
+    - {t: 1200, angle: 96}
+    - {t: 2400, angle: 90}
+safety:
+  max_speed_deg_per_sec: 90
