@@ -1,0 +1,18 @@
+name: fist_bump
+description: Extends one front leg forward, pauses, and retracts.
+duration_ms: 1800
+servos:
+  front_left:
+    - {t: 0, angle: 90}
+    - {t: 500, angle: 122}
+    - {t: 1000, angle: 122}
+    - {t: 1500, angle: 90}
+    - {t: 1800, angle: 90}
+  body_tilt:
+    - {t: 0, angle: 90}
+    - {t: 500, angle: 102}
+    - {t: 1000, angle: 102}
+    - {t: 1500, angle: 90}
+    - {t: 1800, angle: 90}
+safety:
+  max_speed_deg_per_sec: 95
