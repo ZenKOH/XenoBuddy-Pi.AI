@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xenobuddy-pi-ai"
+version = "0.1.0"
+description = "Voice-to-motion Raspberry Pi framework for expressive tabletop robots"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Zen Koh"}]
+keywords = ["raspberry-pi", "robotics", "servo", "pca9685", "voice-agent", "maker", "hri"]
+dependencies = ["PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+hardware = ["adafruit-circuitpython-pca9685>=3.4", "adafruit-circuitpython-motor>=3.4"]
+web = ["flask>=3.0"]
+
+[project.scripts]
+xenobuddy = "xenobuddy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["xenobuddy*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
