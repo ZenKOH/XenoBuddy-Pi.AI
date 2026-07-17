@@ -1,0 +1,16 @@
+name: idle
+description: Calm breathing-like idle stance.
+duration_ms: 1200
+servos:
+  body_tilt:
+    - {t: 0, angle: 90}
+    - {t: 600, angle: 94}
+    - {t: 1200, angle: 90}
+  front_left:
+    - {t: 0, angle: 90}
+    - {t: 1200, angle: 90}
+  front_right:
+    - {t: 0, angle: 90}
+    - {t: 1200, angle: 90}
+safety:
+  max_speed_deg_per_sec: 45
